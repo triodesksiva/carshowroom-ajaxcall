@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car showroom</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Arapey|Open+Sans+Condensed:300" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+    	.error {
+    		color: red;
+    	}
+    </style>
+</head>
+<body>
+<div class="car-header">
+    <div class="container pt-3 pb-3">
+
+    	<div class="row ">
+    		<div class="col-lg-5 col-xl-6 col-md-12 col-sm-12 col-xs-12">
+    			<p class="lead display-4"><span class="auto">AUTO</span>TRAIDER</p>
+    			<p class="sub_head"><a href="" class="text-light">Finding just the car you need</a></p>
+    		</div>
+    		<div class="col-lg-7 col-xl-6  d-none d-lg-block d-sm-none">
+    		    <nav class="navbar navbar-expand-xl">
+    			<ul class="navbar-nav">
+    				<li class="nav-item text-light pr-2"><i class="fa fa-envelope-o"></i><a class="nav-link text-light" href="">info&copy;TrioDesk.com</a></li>
+    				<li class="nav-item text-light mt-2 pr-2"><i class="fa fa-clock-o pr-2"></i>Mon–Sat: 7:00–19:00</li>
+    				<li class="nav-item text-light pr-2"><i class="fa fa-phone"></i><a class="nav-link text-light" href="">7402206656</a></li>
+    			</ul>
+    			</nav>
+    		</div>
+    	</div>
+    </div>
+</div>
+<div class="backimage">
+	<div class="container">
+		<div class="row ">
+			<div class="col text-center">
+				<p class="display-4 main_img_title text-light">
+					GET FAVOURITE CAR
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+    <div class="row mt-2">
+		<div class="col car-search">
+			<p class="display-4">CAR SEARCH</p>
+		</div>
+	</div>
+	<div class="row mt-3">
+		<div class="hr-rule"></div>
+	</div>
+	<div class="row mt-4">
+		<div class="col">
+			<p class="lead">Please complete and submit this form and one of our representatives will reply promptly. Thank You!</p>
+		</div>
+	</div>
+	<form id="form1" onsubmit="return false">
+	<div class="row mt-5">
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+			<div class="form-group">
+				<label class="text-lg">Make:</label>
+				<select class="form-control" id="carselection" name="carselection" required>
+
+				</select>
+				<p class="lead text-danger" id="val1"></p>
+			</div>
+
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+			<div class="form-group">
+				<label class="text-lg">Model:</label>
+				<select class="form-control" id="modelselection" name="modelselection" required>
+					
+				</select>
+                 <p class="lead text-danger" id="val2"></p>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+			<div class="form-group">
+				<label class="text-lg">Country:</label>
+				<select class="form-control" id="countryselection" name="countryselection" required>
+					
+				</select>
+				<p class="lead text-danger" id="val3"></p>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+			<div class="form-group">
+				<label class="text-lg">City:</label>
+				<select class="form-control" id="cityselection" name="cityselection" required>
+					
+				</select>
+				<p class="lead text-danger" id="val4"></p>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+			<div class="form-group">
+				<label class="text-lg">Body Types:</label>
+				<select class="form-control" id="typeselection" name="typeselection" required>
+					
+				</select>
+				<p class="lead text-danger" id="val5"></p>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+			<div class="row">
+				<div class="col">
+					<div class="form-group">
+						<label class="text-lg">MinYear:</label>
+						<select class="form-control" id="min" name="min" required>
+					
+						</select>
+						<p class="lead text-danger" id="val6"></p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-group">
+						<label class="text-lg">MaxYear:</label>
+						<select class="form-control" id="max" name="max" required>
+					
+						</select>
+						<p class="lead text-danger" id="val7"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+			<div class="form-group">
+				<label class="text-lg">Color:</label>
+				<select class="form-control" id="Color" name="Color" required>
+					
+				</select>
+				<p class="lead text-danger" id="val8"></p>
+			</div>
+		</div>
+		<div class="col-lg-8 col-md-6 col-sm-6 col-xs-12">
+			<div class="row">
+				<div class="col">
+					<div class="form-group">
+						<label class="text-lg">MinPrice:</label>
+						<select class="form-control" id="low" name="low" required>
+					
+						</select>
+						<p class="lead text-danger" id="val9"></p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-group">
+						<label class="text-lg">MaxPrice:</label>
+						<select class="form-control" id="high" name="high" required>
+					
+						</select>
+						<p class="lead text-danger" id="val10"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mx-auto">
+			<div class="col text-center align-self-center">
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary btn-lg" id="mycars">Find Car</button>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	</form>
+	<div class="row">
+			<div class="col text-center text-success">
+				<p class="lead" id="res"></p>
+			</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container mt-4">
+		<div class="row mt-4">
+			<div class="col text-center foot">
+				<p class="text-success"><i class="fa fa-car fa-2x"></i></p>
+				<p class="mt-2 display-4"><span class="text-muted mr-1">AUTO</span><span class="text-light">TRAIDER</span></p>
+				<p class="mt-1 text-muted">Finding just the car you need</p>
+				<p class="mt-3 text-muted">
+					<i class="fa fa-facebook mr-1"></i>
+					<i class="fa fa-twitter mr-1"></i>
+					<i class="fa fa-pinterest mr-1"></i>
+					<i class="fa fa-google mr-1"></i>
+					<i class="fa fa-rss mr-1"></i>
+				</p>
+				<p class="mt-5 text-muted">&copy; 2017 All Rights Reserved Terms of Use and Privacy Policy</p>
+			</div>
+		</div>
+		
+	</div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+   	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+   	<script type="text/javascript" src="script.js"></script>
+   	<!-- <script type="text/javascript" src="enter.js"></script> -->
+</body>
+</html>

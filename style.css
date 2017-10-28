@@ -1,0 +1,74 @@
+.car-header {
+	background-color: 	#328a2e;
+}
+.display-4 {
+	font-size: 2rem !important;
+	font-weight: normal !important;
+	margin-top: 0.7rem;
+}
+span.auto {
+	font-weight: 600;
+}
+.sub_head {
+	font-size: 1.1rem !important;
+	font-family: 'Arapey', serif;
+}
+.sub_head>a:hover {
+	text-decoration: none;
+}
+.nav-item {
+	padding: 1rem;
+}
+.nav-link {
+	display: inline-block;
+}
+.navbar-nav {
+	flex-direction: row;
+}
+.backimage {
+	background-image: url(86bc5a4d086cc1c40d4a4ee2399fdd29.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	height: 400px;
+}
+.main_img_title {
+	margin-top: 10rem;
+}
+.car-search p{
+	font-weight: 600 !important;
+}
+.hr-rule {
+	width: 50px;
+	border-bottom: 2px solid lightgreen;
+	margin-left: 1rem;
+}
+.text-lg {
+	font-size: 1.2rem;
+}
+.footer {
+	background-color: #343537;
+}
+.foot {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+@media (max-width: 991px) and (min-width: 767px)
+{
+  .car-header p.display-4,.car-header p.sub_head {
+  	text-align: center;
+  }
+}
+@media (max-width: 768px) and (min-width: 567px)
+{
+  .car-header p.display-4,.car-header p.sub_head {
+  	text-align: center;
+  }
+}
+@media (max-width: 566px) and (min-width: 320px)
+{
+  .car-header p.display-4,.car-header p.sub_head {
+  	text-align: center;
+  }
+}
